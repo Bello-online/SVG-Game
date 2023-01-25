@@ -1,0 +1,75 @@
+/*
+*** Author: Bello Olaseni.
+*** Date: July 27th, 2022.
+*** This is the css file for the assignment 5 designing the elements in the html file
+*/
+body {
+    background: rgba(33, 56, 58, 0);   
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans
+    }
+
+    .svg{
+        text-align: center;
+        padding-top: 20px;
+    }
+
+footer{
+    text-align: center;
+}
+
+h1{
+    background-color: yellow;
+    margin-top: 0cm;
+    position: sticky;
+}
+ #Path{
+    animation: fader 5s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fader {
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+button{
+    cursor: pointer;
+    text-align: center;
+    font-size: x-large;
+    margin-left: 700px;
+    background-color: brown;
+}
+#music{
+    margin-left: 710px;
+}
+body {
+    background-image: url("back.jpeg");
+}
+
+ul{
+    text-align: left;
+}
+table {
+    border: solid 1px blue;
+}
+td{
+    text-align: center;
+}
+
+rect:hover{
+    fill: black;
+}
+
+#move{
+    background-color: blue;
+    text-align: center;
+    font-size: x-large;
+    margin-left: 700px;
+}

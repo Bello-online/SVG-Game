@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+  *** Author: Bello Olaseni. 
+  *** Date: July 26th, 2022.
+  *** This is the html file for my SVG game.
+-->
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>SVG Graphics</title>
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+        </script>
+
+</head>
+
+<body>
+    <header>
+        <h1>The Ball Catcher</h1>
+    </header>
+    <ul>
+        <li>Rules</li>
+        <li>The game immediately begins when you hit the Play button</li>
+        <li>You must move the squares with the "move button" and  put the mouse over the square to catch a Ball.</li>
+        <li>The Score is recorded on the score board below</li>
+        <li>Hovering over a square at the right time while the ball passes through it allows the Ball to be captured</li>
+        <li>You can request for music by clicking the music button</li>
+        <li>You may get extra points or no points at all for catching the ball in "Special positions"</li>
+        <li>** Refresh the page to play again **</li>
+    </ul>
+    <audio>
+        <source src="music.mp3">
+    </audio>
+    <button onclick="playMusic()" type="button" id="music">🎶 </button>
+    <button onclick="stopMusic()" type="button"> mute </button>
+    <button id="begin"> Play </button>
+    <div class="svg">
+        <svg id="game" width="700" height="450" style="background-color: lightblue;">
+            <rect height="50" width="50" x="350" y="250" stroke="red" stroke-width="3" fill="red"></rect>
+            <rect height="50" width="50" x="600" y="300" stroke="red" stroke-width="3" fill="red"></rect>
+            <rect height="50" width="50" x="100" y="100" stroke="red" stroke-width="3" fill="red"></rect>
+            <rect height="50" width="50" x="200" y="400" stroke="red" stroke-width="3" fill="red"></rect>
+            <path id="Path" fill="none" stroke="red"
+                d="M10,90 Q90,90 90,45 Q90,10 50,10 Q10,10 10,40 Q10,70 45,70 Q70,70 75,50"></path>
+        <text>
+            <textpath href="#Path">
+                Ball Catcher
+            </textpath>
+        </text>
+        </svg>
+    </div>
+    <button id="move">Move</button>
+    <table>
+        <thead>
+            <tr>
+                <td>Score</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="score">0</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <footer>
+        ©️ 👑 Bello olaseni, 2022.
+        <script src="svg.js"></script>
+    </footer>
+</body>
+
+</html>
