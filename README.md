@@ -21,3 +21,7 @@ SVG Graphics
 Not Available
 
 ### 2022
+
+![game1](https://github.com/Bello-online/LoveCalculator/assets/78232648/b3f8e641-a67c-40f2-8e8f-564a9f0f476f)
+
+![game2](https://github.com/Bello-online/LoveCalculator/assets/78232648/10b9dcb9-56b6-494b-bc87-f35c6abdd5d0)
